@@ -55,7 +55,14 @@ define("SOCIAL", [
  * MAIL CONNECT 
  */
 
-define("MAIL", []);
+define("MAIL", [
+    "host" => "smtp.sendgrid.net",
+    "port" => "587",
+    "user" => "apikey",
+    "passwd" => "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",
+    "from_name" => "Bruno Hoffmann",
+    "from_email" => "brunohoffmanndev@gmail.com"
+]);
 
 /**
  * SOCIAL LoGIN: FACEBOOK

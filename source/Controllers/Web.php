@@ -82,6 +82,7 @@ class Web extends Controller
         }
 
         $user = (new User())->find("email = :e AND forget = :f", "e={$email}&f={$forget}")->fetch();
+        
         if(!$user){
             flash("error", $errForget);
             $this->router->redirect("web.forget");

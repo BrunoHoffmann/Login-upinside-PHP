@@ -158,7 +158,7 @@ class Auth extends Controller
 
         flash("success", "Sua senha foi atualizada com sucesso");
         echo $this->ajaxResponse("redirect", [
-            "url"=>$this->router->route("web.login")
+            "url" => $this->router->route("web.login")
         ]);
     }
 }
